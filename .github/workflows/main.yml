@@ -1,37 +1,26 @@
 
-name: Build unsigned iOS IPA
+name: Build FileQuickManager IPA
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: macos-latest
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Build app without signing
-        run: |
-          xcodebuild \
-            -project FileQuickManager.xcodeproj \
-            -scheme FileQuickManager \
-            -configuration Release \
-            -sdk iphoneos \
-            -derivedDataPath build \
-            CODE_SIGNING_ALLOWED=NO \
-            build
+      - name: Select Xcode
+        run: xcode-select -p
 
-      - name: Package unsigned IPA
+      - name: Find Xcode project
         run: |
-          mkdir -p Payload
-          cp -R build/Build/Products/Release-iphoneos/FileQuickManager.app Payload/
-          /usr/bin/zip -qry FileQuickManager-unsigned.ipa Payload
+          find . -name "*.xcodeproj" -o -name "*.xcworkspace"
 
-      - name: Upload IPA artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: FileQuickManager-unsigned-ipa
-          path: FileQuickManager-unsigned.ipa
-          if-no-files-found: error
-          retention-days: 7
+      - name: Build app
+        run: |
+          xcodebuild -list -project FileQuickManager.xcodeproj
