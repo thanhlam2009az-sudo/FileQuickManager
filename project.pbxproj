@@ -1,0 +1,32 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A00000000000000000000001 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastUpgradeCheck = 1600; }; buildConfigurationList = A00000000000000000000008; compatibilityVersion = "Xcode 14.0"; mainGroup = A00000000000000000000002; productRefGroup = A00000000000000000000004; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000007,); };
+  A00000000000000000000002 = {isa = PBXGroup; children = (A00000000000000000000003, A00000000000000000000004, A0000000000000000000000A,); sourceTree = "<group>"; };
+  A00000000000000000000003 /* App sources */ = {isa = PBXGroup; children = (A0000000000000000000000B,); path = FileQuickManager; sourceTree = "<group>"; };
+  A00000000000000000000004 /* Products */ = {isa = PBXGroup; children = (A00000000000000000000005,); name = Products; sourceTree = "<group>"; };
+  A00000000000000000000005 /* FileQuickManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileQuickManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  A00000000000000000000006 /* Sources build phase */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A0000000000000000000000C,); runOnlyForDeploymentPostprocessing = 0; };
+  A00000000000000000000007 /* FileQuickManager */ = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000009; buildPhases = (A00000000000000000000006, A0000000000000000000000D, A0000000000000000000000E,); buildRules = (); dependencies = (); name = FileQuickManager; productName = FileQuickManager; productReference = A00000000000000000000005; productType = "com.apple.product-type.application"; };
+  A00000000000000000000008 = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000010, A00000000000000000000011,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A00000000000000000000009 = {isa = XCConfigurationList; buildConfigurations = (A00000000000000000000012, A00000000000000000000013,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  A0000000000000000000000A /* Resources */ = {isa = PBXGroup; children = (A0000000000000000000000F,); name = Resources; path = FileQuickManager/Resources; sourceTree = "<group>"; };
+  A0000000000000000000000B /* FileQuickManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileQuickManagerApp.swift; sourceTree = "<group>"; };
+  A0000000000000000000000C /* FileQuickManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000000B; };
+  A0000000000000000000000D /* Resources build phase */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A00000000000000000000014, A00000000000000000000015,); runOnlyForDeploymentPostprocessing = 0; };
+  A0000000000000000000000E /* Frameworks build phase */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  A0000000000000000000000F /* Resource folder */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = "<group>"; };
+  A00000000000000000000014 /* localConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000016; };
+  A00000000000000000000015 /* Assembly-CSharp-patch.bytes in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000017; };
+  A00000000000000000000016 /* localConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localConfig.json; sourceTree = "<group>"; };
+  A00000000000000000000017 /* Assembly-CSharp-patch.bytes */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Assembly-CSharp-patch.bytes"; sourceTree = "<group>"; };
+  A00000000000000000000010 /* Debug project config */ = {isa = XCBuildConfiguration; buildSettings = {IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Debug; };
+  A00000000000000000000011 /* Release project config */ = {isa = XCBuildConfiguration; buildSettings = {IPHONEOS_DEPLOYMENT_TARGET = 16.0; SDKROOT = iphoneos; SWIFT_VERSION = 5.0; }; name = Release; };
+  A00000000000000000000012 /* Debug target config */ = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = FileQuickManager/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.example.FileQuickManager; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_EMIT_LOC_STRINGS = YES; CODE_SIGN_STYLE = Automatic; }; name = Debug; };
+  A00000000000000000000013 /* Release target config */ = {isa = XCBuildConfiguration; buildSettings = {GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = FileQuickManager/Info.plist; PRODUCT_BUNDLE_IDENTIFIER = com.example.FileQuickManager; PRODUCT_NAME = "$(TARGET_NAME)"; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_EMIT_LOC_STRINGS = YES; CODE_SIGN_STYLE = Automatic; }; name = Release; };
+ };
+ rootObject = A00000000000000000000001;
+}
